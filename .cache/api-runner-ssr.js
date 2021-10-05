@@ -1,4 +1,8 @@
-var plugins = []
+var plugins = [{
+      name: 'gatsby-plugin-mdx',
+      plugin: require('/Users/jakenapper/Documents/xlivelyfpl/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
+      options: {"plugins":[],"extensions":[".md",".mdx"],"defaultLayouts":{},"gatsbyRemarkPlugins":[],"lessBabel":false,"remarkPlugins":[],"rehypePlugins":[],"mediaTypes":["text/markdown","text/x-markdown"],"root":"/Users/jakenapper/Documents/xlivelyfpl"},
+    }]
 /* global plugins */
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
