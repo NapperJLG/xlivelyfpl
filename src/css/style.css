@@ -19,6 +19,36 @@
     max-width: 1080px;
 }
 
+.sticky-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 1rem;
+    z-index: 10;
+    margin-top: 0;
+}
+
+.sticky-nav-button {
+    color: black;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 5%;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.sticky-nav-button:hover,
+.sticky-nav-button:active{
+    color: black;
+    background: #efefef;
+}
+
 .card {
     padding: 2rem;
     list-style: none;
