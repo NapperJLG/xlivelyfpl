@@ -2082,6 +2082,25 @@ var plugins = [{
     "mediaTypes": ["text/markdown", "text/x-markdown"],
     "root": "/Users/jakenapper/Documents/xlivelyfpl"
   }
+}, {
+  name: 'gatsby-plugin-mdx',
+  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-mdx/gatsby-ssr */ "./node_modules/gatsby-plugin-mdx/gatsby-ssr.js"),
+  options: {
+    "plugins": [],
+    "gatsbyRemarkPlugins": [{
+      "resolve": "gatsby-remark-images",
+      "options": {
+        "maxWidth": 1200
+      }
+    }],
+    "extensions": [".mdx"],
+    "defaultLayouts": {},
+    "lessBabel": false,
+    "remarkPlugins": [],
+    "rehypePlugins": [],
+    "mediaTypes": ["text/markdown", "text/x-markdown"],
+    "root": "/Users/jakenapper/Documents/xlivelyfpl"
+  }
 }];
 /* global plugins */
 // During bootstrap, we write requires at top of this file which looks like:
@@ -3804,6 +3823,37 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/gatsby-plugin-mdx/loaders/mdx-components.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-mdx/loaders/mdx-components.js ***!
+  \******************************************************************/
+/***/ ((module) => {
+
+module.exports = {
+  plugins: []
+};
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-mdx/loaders/mdx-scopes.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-mdx/loaders/mdx-scopes.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var scope_0 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f 2.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f 2.js")["default"];
+
+var scope_1 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js")["default"];
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Object.assign({}, scope_0, scope_1));
+
+/***/ }),
+
 /***/ "./node_modules/gatsby-plugin-mdx/context.js":
 /*!***************************************************!*\
   !*** ./node_modules/gatsby-plugin-mdx/context.js ***!
@@ -4100,37 +4150,6 @@ const WrapRootElement = ({
 }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(MDXConsumer, null, element);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (WrapRootElement);
-
-/***/ }),
-
-/***/ "./node_modules/gatsby-plugin-mdx/loaders/mdx-components.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/gatsby-plugin-mdx/loaders/mdx-components.js ***!
-  \******************************************************************/
-/***/ ((module) => {
-
-module.exports = {
-  plugins: []
-};
-
-/***/ }),
-
-/***/ "./node_modules/gatsby-plugin-mdx/loaders/mdx-scopes.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/gatsby-plugin-mdx/loaders/mdx-scopes.js ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-var scope_0 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f 2.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f 2.js")["default"];
-
-var scope_1 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js")["default"];
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Object.assign({}, scope_0, scope_1));
 
 /***/ }),
 
