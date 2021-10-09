@@ -93,3 +93,44 @@
     color: #707070;
     font-size: 1.2rem;
 }
+
+.post-heading {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.post-date {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+}
+
+.post-body {
+    margin: 0 auto 4rem auto;
+}
+
+.post-body > * {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.post-body ul,
+.post-body ol {
+    margin-left: 2rem;
+}
+
+.previous-next-button {
+    font-size: 1.25rem;
+    color: black;
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    border-radius: 5%;
+    padding: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    min-width: 25%
+}
