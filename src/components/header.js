@@ -2,13 +2,15 @@ import React from 'react'
 
 const Header = () => {
 	return (
-		<div className="sticky-nav">
-			<a href="/" className="sticky-nav-button">Home</a>
-			<div className="sticky-nav-stack">
-				<a href="/" className="sticky-nav-button">Blog</a>
-				<a href="/" className="sticky-nav-button">Contact</a>
-				<a href="/" className="sticky-nav-button">About</a>
+		<div className="nav">
+			<h1>xLively FPL</h1>
+			<div className="nav-button-container">
+				<a href="/" className="nav-button">Home</a>
+				<a href="/" className="nav-button">Blog</a>
+				<a href="/" className="nav-button">Contact</a>
+				<a href="/" className="nav-button">About</a>
 			</div>
+
 		</div>
 	)
 }

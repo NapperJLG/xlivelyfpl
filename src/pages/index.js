@@ -12,7 +12,6 @@ const Home = ({ data }) => {
   return (
     <Container>
       <Seo title={siteTitle} description={siteDescription} />
-      <h1>Blog Posts</h1>
       {posts.map((post) => {
         const title = post.frontmatter.title || post.slug
         return (
