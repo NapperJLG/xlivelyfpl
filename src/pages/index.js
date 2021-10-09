@@ -1,5 +1,6 @@
 import { Link, graphql } from 'gatsby'
 import React from 'react'
+import Seo from "../components/seo";
 import Container from '../components/container'
 
 const Home = ({ data }) => {
@@ -10,6 +11,7 @@ const Home = ({ data }) => {
 
   return (
     <Container>
+      <Seo title={siteTitle} description={siteDescription} />
       <h1>Blog Posts</h1>
       {posts.map((post) => {
         const title = post.frontmatter.title || post.slug
