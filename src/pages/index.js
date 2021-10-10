@@ -2,6 +2,7 @@ import { Link, graphql } from 'gatsby'
 import React from 'react'
 import Seo from "../components/seo";
 import Container from '../components/container'
+import Img from "gatsby-image"
 
 const Home = ({ data }) => {
 
@@ -14,8 +15,10 @@ const Home = ({ data }) => {
       <Seo title={siteTitle} description={siteDescription} />
       {posts.map((post) => {
         const title = post.frontmatter.title || post.slug
+        const featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
         return (
           <div key={post.slug} className="card">
+            <Img fluid={featuredImgFluid} />
             <Link className="card-link" to={post.slug}>
               <h1 className="card-title">{title}</h1>
               <p className="card-date">{post.frontmatter.date}</p>
@@ -45,6 +48,13 @@ export const pageQuery = graphql`
             date(formatString: "DD/MM/YYYY")
             title
             description
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           slug
         }

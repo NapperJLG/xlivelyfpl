@@ -12,10 +12,21 @@ module.exports = {
 		}
 	},
 	plugins: [
+		`gatsby-plugin-sharp`,
+		`gatsby-transformer-sharp`,
+		`gatsby-remark-images`,
 		{
 			resolve: `gatsby-plugin-mdx`,
 			options: {
-				extensions: [`.md`, `.mdx`]
+				extensions: [`.md`, `.mdx`],
+				gatsbyRemarkPlugins: [
+					{
+						resolve: `gatsby-remark-images`,
+						options: {
+							maxWidth: 1200,
+						},
+					},
+				],
 			}
 		},
 		{
@@ -25,21 +36,7 @@ module.exports = {
 				name: `blog`
 			}
 		},
-		`gatsby-plugin-sharp`,
-		`gatsby-remark-images`,
-		{
-			resolve: `gatsby-plugin-mdx`,
-			options: {
-				gatsbyRemarkPlugins: [
-					{
-						resolve: `gatsby-remark-images`,
-						options: {
-							maxWidth: 1200,
-						},
-					},
-				],
-			},
-		},
+
 		{
 			resolve: `gatsby-plugin-google-fonts`,
 			options: {
