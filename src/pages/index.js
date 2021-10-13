@@ -18,11 +18,13 @@ const Home = ({ data }) => {
         const featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
         return (
           <div key={post.slug} className="card">
-            <Img fluid={featuredImgFluid} />
+            <div>
+              <Img className="card-image" fluid={featuredImgFluid} />
+            </div>
             <Link className="card-link" to={post.slug}>
               <h1 className="card-title">{title}</h1>
               <p className="card-date">{post.frontmatter.date}</p>
-              <p className="class-desc">{post.frontmatter.description}</p>
+              <p className="card-desc">{post.frontmatter.description}</p>
             </Link>
           </div>
         )
@@ -50,7 +52,7 @@ export const pageQuery = graphql`
             description
             featuredImage {
               childImageSharp {
-                fluid(maxWidth: 800) {
+                fluid(maxWidth: 200) {
                   ...GatsbyImageSharpFluid
                 }
               }
