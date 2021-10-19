@@ -5,45 +5,43 @@
     border: 0;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &:before {
+        z-index: -10;
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image:
+        linear-gradient(to bottom, rgba(245, 246, 252, 0.52), white), url('/images/StadiumPic.png');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+        filter: grayscale(100%);
+    }
 }
 
-.container:before {
-	z-index: -10;
-	content: ' ';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-	background-image:
-    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), white),
-    url('/images/StadiumPic.png');
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover;
-	filter: grayscale(100%);
-}
-
-.main{
+.main {
     justify-content: center;
     align-items: flex-start;
     margin: 4rem auto;
     width: 100%;
     max-width: 1080px;
-		
 }
 
-.nav{
+.nav {
     background-color: #053f9c;
     color: white;
     display: flex;
     flex-direction: row;
-		justify-content: space-between;
+	justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
     width: 100%;
@@ -55,10 +53,10 @@
 
 .nav-button-container {
     flex-direction: row;
-}
 
-.nav-button-container > a {
-	color: white;
+    > a {
+        color: white;
+    }
 }
 
 .nav-button {
@@ -71,34 +69,31 @@
     text-align: center;
     display: inline-block;
     text-decoration: none;
-}
 
-.nav-button:hover,
-.nav-button:active{
-    color: black;
-    background: #efefef;
+    &:hover, &:active {
+        color: black;
+        background: #efefef;
+    }
 }
 
 .card {
     padding: 2rem;
-		display: flex;
+	display: flex;
     list-style: none;
     margin-top: 2rem;
     text-decoration: none;
     transition: transform 350ms;
-		background-color: white;
-		box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
-		
-}
+	background-color: white;
+	box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-.card:hover {
-    cursor: pointer;
-    text-decoration: none;
-    transform: translate(-2px);
-}
-
-.card:first-of-type {
-    margin-top: 4rem;
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+        transform: translate(-2px);
+    }
+    &:first-of-type {
+        margin-top: 4rem;
+    }	
 }
 
 .card-title,
@@ -145,16 +140,14 @@
 
 .post-body {
     margin: 0 auto 4rem auto;
-}
 
-.post-body > * {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-.post-body ul,
-.post-body ol {
-    margin-left: 2rem;
+    > * {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    ul, ol {
+        margin-left: 2rem;
+    }
 }
 
 .previous-next-button {
